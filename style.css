@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    position: relative;
+    min-height: 100%;
 }
 
 a {
@@ -11,7 +13,6 @@ a {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100vh;
-    min-height: 500px;
     background: url('./Images/bg.jpg') center no-repeat;
     background-size: cover;
 }
@@ -19,15 +20,6 @@ a {
 .textIcons {
     color: #ffbd26;
     display: inline-block;
-}
-
-.textSpotify {
-    color: #ffbd26;
-    display: block;
-}
-
-.spotify {
-    cursor: pointer;
 }
 
 .icon {
@@ -47,17 +39,38 @@ a {
     padding: 6px 6px;
 }
 
+.textSpotify {
+    color: #ffbd26;
+    display: block;
+}
+
+.spotify {
+    cursor: pointer;
+}
+
+.logoVideo {
+    text-align: center;
+    width: 100%;
+}
+
+.blockInfos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .firstInfos, .secondInfos {
     display: inline-block;
-    position: absolute;
 }
 
 .firstInfos {
-    left: 30px;
+    float: left;
 }
 
 .secondInfos {
-    right: 30px;
+    float: right;
 }
 
 .info {
@@ -74,10 +87,7 @@ a {
     }
 
     .logoVideo {
-        position: absolute;
-        top: 20%;
-        text-align: center;
-        width: 100%;
+        margin-top: 40px;
     }
 
     .imgLogo {
@@ -114,11 +124,15 @@ a {
         display: block;
         bottom: 0px;
     }
+
+    .wrapper {
+        min-height: 550px;
+    }
 }
 
 @media (min-width: 425px) {
     .imgLogo {
-        width: 200px;
+        width: 240px;
         height: 80px;
         padding: 40px;
     }
@@ -131,7 +145,11 @@ a {
     }
 
     .logoVideo {
-        top: 20%;
+        margin-top: 60px;
+    }
+    
+    .wrapper {
+        min-height: 720px;
     }
 }
 
@@ -160,13 +178,13 @@ a {
         font-size: 23px;
         font-weight: 700;
     }
+
+    .wrapper {
+        min-height: 850px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .logoVideo {
-        top: 10%;
-    }
-    
     .videoPPR {
         width: 650px;
         height: 500px;
@@ -177,17 +195,8 @@ a {
         display: inline-block;
         padding: 10px 10px;
     }
-}
 
-@media (min-width: 1550px) {
-    .videoPPR {
-        width: 750px;
-        height: 600px;
-        padding: 0 20px;
-    }
-
-    .imgLogo {
-        padding: 220px 0;
-        padding-right: 60px;
+    .wrapper {
+        min-height: 850px;
     }
 }
