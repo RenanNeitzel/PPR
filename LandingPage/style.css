@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background: url('../Images/bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.textIcons {
+    color: #ffbd26;
+    display: inline-block;
+}
+
+.textSpotify {
+    color: #ffbd26;
+    display: block;
+}
+
+.spotify {
+    cursor: pointer;
+}
+
+.icon {
+    color: white;
+    background-color: #ffbd26;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.fab.fa-instagram, .fab.fa-facebook-f {
+    margin-left: 4px;
+}
+
+.icon.instagram {
+    padding: 6px 6px;
+}
+
+.firstInfos, .secondInfos {
+    display: inline-block;
+    position: absolute;
+}
+
+.firstInfos {
+    left: 30px;
+}
+
+.secondInfos {
+    right: 30px;
+}
+
+.info {
+    color: #777777;
+}
+
+
+@media (min-width: 320px) {
+    .socialMedia {
+        text-align: right;
+        font-size: 15px;
+        padding-top: 20px;
+        margin-right: 30px;
+    }
+
+    .logoVideo {
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .imgLogo {
+        width: 150px;
+        height: 50px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .videoPPR {
+        margin-bottom: 10px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .icon, .textIcons {
+        font-size: 15px;
+    }
+
+    .icon.facebook {
+        padding: 7px 10px;
+    }
+
+    .icon.linkedin {
+        padding: 7px 11px;
+    }
+
+    .textIcons, .textSpotify {
+        font-size: 15px;
+    }
+
+    .firstInfos, .secondInfos {
+        font-size: 15px;
+        display: block;
+        bottom: 0px;
+    }
+}
+
+@media (min-width: 425px) {
+    .imgLogo {
+        width: 200px;
+        height: 80px;
+        padding: 40px;
+    }
+
+    .videoPPR {
+        margin-bottom: 10px;
+        width: 350px;
+        height: 200px;
+        padding: 0 40px;
+    }
+
+    .logoVideo {
+        top: 20%;
+    }
+}
+
+@media (min-width: 715px) {
+    .textSpotify {
+        text-align: right;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 920px) {
+    .videoPPR {
+        width: 550px;
+        height: 400px;
+        padding: 0 20px;
+    }
+
+    .imgLogo {
+        padding: 150px 0;
+        padding-right: 20px;
+        width: 300px;
+        height: 100px;
+    }
+    
+    .textIcons, .icon, .textIcons, .textSpotify, .firstInfos, .secondInfos {
+        font-size: 23px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logoVideo {
+        top: 10%;
+    }
+    
+    .videoPPR {
+        width: 650px;
+        height: 500px;
+        padding: 0 20px;
+    }
+
+    .info {
+        display: inline-block;
+        padding: 10px 10px;
+    }
+}
+
+@media (min-width: 1550px) {
+    .videoPPR {
+        width: 750px;
+        height: 600px;
+        padding: 0 20px;
+    }
+
+    .imgLogo {
+        padding: 220px 0;
+        padding-right: 60px;
+    }
+}
