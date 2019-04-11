@@ -63,14 +63,13 @@ a {
 
 .firstInfos, .secondInfos {
     display: inline-block;
+    text-align: center;
 }
 
 .firstInfos {
-    float: left;
 }
 
 .secondInfos {
-    float: right;
 }
 
 .info {
